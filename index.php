@@ -9,7 +9,7 @@ use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
 $connectionString = "fT/cTeBmZVqOCR6hbLf4mePAQ/CdCTD0ZYMLhUd+7FdeJzDNDZ4/bGNPytacR68wVPmUBtkMtH5td2/Ra8nkGw==";
-$containerName = "adibihakapp";
+$containerName = "gambar";
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 if (isset($_POST['submit'])) {
