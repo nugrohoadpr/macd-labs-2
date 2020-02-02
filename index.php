@@ -8,8 +8,8 @@ use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-$connectionString = "<YourKey>";
-$containerName = "<YourBlob>";
+$connectionString = "fT/cTeBmZVqOCR6hbLf4mePAQ/CdCTD0ZYMLhUd+7FdeJzDNDZ4/bGNPytacR68wVPmUBtkMtH5td2/Ra8nkGw==";
+$containerName = "adibihakapp";
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 if (isset($_POST['submit'])) {
@@ -31,9 +31,8 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- <link rel="icon" href="https://raw.githubusercontent.com/muhrizky/Smart-Parkir/master/parking_meter__2__Mrq_icon.ico"> -->
 
-    <title>Image Analyzer App</title>
+    <title>Image Analyzer</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 
@@ -47,7 +46,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 	<main role="main" class="container">
     		<div class="starter-template"> <br>
         		<h1>Image Analyzer</h1>
-				<p class="lead">Pilih foto dari komputer yang ingin Anda analisis. lalu klik tombol <b>Upload</b> <br>Untuk memulai proses analisis foto, pilih tombol <b>Analyze!</b> pada pilihan gambar di masing-masing daftar.</p>
+				<p class="lead">Masukkan foto yang ingin anda anlisa. lalu klik Upload <br>Untuk memulai proses analisis foto, pilih tombol <b>Analyze!</b> pada pilihan gambar di masing-masing daftar.</p>
 				<span class="border-top my-3"></span>
 			</div>
 		<div class="mt-4 mb-2">
